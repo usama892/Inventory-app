@@ -45,7 +45,6 @@ const AddProductForm = () => {
         }
     };
 
-    // ✅ Submit Handler
     const submitHandler = async (e) => {
         e.preventDefault();
 
