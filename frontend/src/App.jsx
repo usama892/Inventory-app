@@ -21,12 +21,12 @@ const App = () => {
                 {/* Protected Routes */}
                 <Route path="/customer-dashboard" element={
                     <ProtectedRoute>
-                        {role === 'customer' ? <CustomerDashboard /> : <Navigate to="/login" />}
+                        {role === 'customer' ? <User /> : <Navigate to="/login" />}
                     </ProtectedRoute>
                 } />
                 <Route path="/seller-dashboard" element={
                     <ProtectedRoute>
-                        {role === 'seller' ? <SellerDashboard /> : <Navigate to="/login" />}
+                        {role === 'seller' ? <Admin /> : <Navigate to="/login" />}
                     </ProtectedRoute>
                 } />
             </Routes>
